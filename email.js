@@ -19,7 +19,7 @@ const transport = nodemailer.createTransport({
 const mailOptions = {
     from: 'aaaa.zhao@g.northernacademy.org',
     to: 'yumingxian7012@gmail.com',
-    subject: 'Error Appearance',
+    subject: 'Error Appearance From Covid Data Algorithm',
     html: 'hello world!',
 };
 
