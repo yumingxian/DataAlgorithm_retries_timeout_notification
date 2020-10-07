@@ -20,7 +20,7 @@ const mailOptions = {
     from: 'aaaa.zhao@g.northernacademy.org',
     to: 'yumingxian7012@gmail.com',
     subject: 'Error Appearance From Covid Data Algorithm',
-    html: 'hello world!',
+    html: 'Data can not insert.',
 };
 
 
@@ -69,12 +69,8 @@ function axiosReq() {
             console.log("Axios ");
         })
         .catch(error => {
-            //loop for max tries
 
             console.log("error ");
-            // axiosReq();
-
-            // console.log(x)
             Timeout();
             x += 1;
 
