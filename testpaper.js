@@ -11,9 +11,9 @@
 //     console.log(str.substr(0,str.indexOf(' ')));
 // }
 
-
-function logMe() {
-    console.log('I ran');
-};
-
-setInterval(logMe, 2000);
+//
+// function logMe() {
+//     console.log('I ran');
+// };
+//
+// setInterval(logMe, 2000);
