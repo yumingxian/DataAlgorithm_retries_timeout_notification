@@ -35,11 +35,17 @@ const sqlconnection = {
     subject: 'SQL Disconnected',
     html: 'SQL Disconnected.',
 };
+const dataerror = {
+    from: 'aaaa.zhao@g.northernacademy.org',
+    to: 'yumingxian7012@gmail.com',
+    subject: 'Data did not insert correctly.',
+    html: 'Data did not insert correctly.',
+};
 
 
 let x = 0;
 axiosReq();
-setInterval(axiosReq, 86400000);
+setInterval(axiosReq, 2000);
 let diflimit = 10;
 
 function axiosReq() {
@@ -135,7 +141,15 @@ function axiosReq() {
                                 //     });
 
                                 // }
-                                    console.log(i + "record inserted");
+                                if (err) {
+                                    transport.sendMail(dataerror, (error, info) => {
+                                        if (error) {
+                                            console.log(error);
+                                        }
+                                        console.log(`Message sent: ${info.response}`);
+                                    });
+                                }
+                                console.log(i + "record inserted");
                                 // }
 
 
