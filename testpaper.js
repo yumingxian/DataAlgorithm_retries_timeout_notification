@@ -12,3 +12,8 @@
 // }
 
 
+function logMe() {
+    console.log('I ran');
+};
+
+setInterval(logMe, 2000);

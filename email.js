@@ -39,6 +39,7 @@ const sqlconnection = {
 
 let x = 0;
 axiosReq();
+setInterval(axiosReq, 86400000);
 let diflimit = 10;
 
 function axiosReq() {
